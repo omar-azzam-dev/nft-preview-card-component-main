@@ -18,7 +18,7 @@ body {
     margin: 10vh auto 0px auto;
     border-radius: var(--boxes-border-radius);
     padding: 25px;
-    width: 350px;
+    max-width: 350px;
     background-color: hsl(216, 50%, 16%);
 }
 @media screen and (max-height: 710px) {
@@ -28,7 +28,6 @@ body {
 }
 @media screen and (max-width: 364px) {
     .nft-card {
-        width: 100%;
         padding: 15px;
     }
     html {
