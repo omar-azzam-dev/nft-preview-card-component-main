@@ -1,6 +1,6 @@
 /* This is the styling file for index.html and we try to accomplish designs in ./design folder 
     it just use native css with flex box */
-
+/* TODO: Overlay has bugs when screen width is less than 364px */
 /* global css */
 html {
     font-size: 18px;
