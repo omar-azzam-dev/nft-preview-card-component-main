@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <!-- reset css -->
+        <link rel="stylesheet" href="reset.css" />
+        <!-- The page style file -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Fonts: Outfit:300-400-600 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <title>Omar Azzam | Frontend Mentor | NFT preview card component</title>
+    </head>
+    <body>
+        <!-- content: Equilibrium #3429 Our Equilibrium collection promotes balance and calm. 0.041 ETH 3 days
+        left Creation of Jules Wyvern -->
+        <main class="nft-card">
+            <div class="nft-img-container">
+                <div class="nft-img-overlay"></div>
+                <img class="nft-view-icon" src="images/icon-view.svg" alt="view icon" />
+                <img
+                    class="nft-img"
+                    src="images/image-equilibrium.jpg"
+                    alt="nft equilibrium image"
+                />
+            </div>
+            <h1 class="nft-title">Equilibrium #3429</h1>
+            <p class="nft-desc">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="nft-info">
+                <div class="nft-price">
+                    <img src="images/icon-ethereum.svg" alt="ethereum icon" />
+                    <p class="nft-price-number">0.041 ETH</p>
+                </div>
+                <div class="nft-time-left">
+                    <img src="images/icon-clock.svg" alt="clock icon" />
+                    <p class="nft-time-left-number">3 days left</p>
+                </div>
+            </div>
+            <hr class="nft-card-breaking-line" />
+            <div class="nft-creator-info">
+                <img class="nft-creator-img" src="images/image-avatar.png" alt="creator image" />
+                <p class="nft-creator-attribution">
+                    Creation of <span class="nft-creator-name">Jules Wyvern</span>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <p class="page-creator-attribution">
+                Frontend Mentor
+                <a class="attribution-link" href="https://frontendmentor.io/challenges"
+                    >Challenge</a
+                >
+                |
+                <a class="attribution-link" href="https://github.com/omar-azzam-dev">Omar Azzam</a>
+            </p>
+        </footer>
+    </body>
 </html>
