@@ -37,12 +37,35 @@ body {
     .page-creator-attribution {
         font-size: 0.9rem;
     }
+    img.nft-view-icon {
+        /* ! we choose element to increase specificity */
+        margin-left: calc(50% - 48px + 7.5px);
+        margin-top: calc(50% - 48px + 7.5px);
+    }
+}
+.nft-img-container:hover .nft-view-icon,
+.nft-img-container:hover .nft-img-overlay {
+    visibility: visible;
+}
+.nft-img-container:active .nft-view-icon,
+.nft-img-container:active .nft-img-overlay {
+    visibility: visible;
 }
 .nft-img-overlay {
-    display: none;
+    background-color: cyan;
+    position: absolute;
+    width: 300px;
+    border-radius: var(--boxes-border-radius);
+    height: 300px;
+    opacity: 0.3;
+    visibility: hidden;
 }
 .nft-view-icon {
-    display: none;
+    position: absolute;
+    margin-left: calc(175px - 48px);
+    margin-top: calc(175px - 48px);
+    visibility: hidden;
+    opacity: 0.7;
 }
 .nft-img {
     border-radius: var(--boxes-border-radius);
