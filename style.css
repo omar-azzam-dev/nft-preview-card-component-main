@@ -6,16 +6,17 @@ html {
     font-size: 18px;
     --main-font-color: hsl(215, 51%, 70%);
     --second-font-color: white;
+    --boxes-border-radius: 12.5px;
 }
 body {
     background-color: hsl(217, 54%, 11%);
-    font-family: Outfit;
+    font-family: Outfit, sans-serif;
 }
 
 /* nft card */
 .nft-card {
     margin: 10vh auto 0px auto;
-    border-radius: 15px;
+    border-radius: var(--boxes-border-radius);
     padding: 25px;
     width: 350px;
     background-color: hsl(216, 50%, 16%);
@@ -44,7 +45,7 @@ body {
     display: none;
 }
 .nft-img {
-    border-radius: 7.5px;
+    border-radius: var(--boxes-border-radius);
     width: 100%;
 }
 .nft-title {
@@ -55,15 +56,11 @@ body {
     /* it will be automatically 600 because 700 weight is not linked */
 }
 .nft-desc {
-    margin-top: 0.4rem;
+    margin: 0.4rem 0;
     color: var(--main-font-color);
     font-weight: 300;
 }
-.nft-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.4rem;
-}
+.nft-info,
 .nft-price,
 .nft-time-left {
     display: flex;
@@ -71,14 +68,13 @@ body {
     align-items: center;
 }
 .nft-price-number {
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
     color: hsl(178, 100%, 50%);
     word-spacing: -0.1rem;
 }
 .nft-time-left-number {
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
     color: var(--main-font-color);
-    word-spacing: -0.013rem;
 }
 .nft-card-breaking-line {
     border: 0.5px solid hsl(215, 32%, 27%);
@@ -117,5 +113,5 @@ body {
     color: gold;
 }
 .attribution-link:active {
-    color: rgb(206, 176, 5);
+    color: rgb(131, 111, 0);
 }
